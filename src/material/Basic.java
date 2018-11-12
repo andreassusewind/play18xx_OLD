@@ -5,6 +5,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
+import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -139,7 +140,8 @@ public class Basic implements Serializable {
 	public void save() {
 		try {
 			// write object to file
-			FileOutputStream fos = new FileOutputStream("/home/andreas/eclipse-workspace/play18xx/save.1830");
+			//FileOutputStream fos = new FileOutputStream("/home/andreas/eclipse-workspace/play18xx/save.1830");
+			FileOutputStream fos = new FileOutputStream("../save.1830");
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(this);
 			oos.close();

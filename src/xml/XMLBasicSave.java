@@ -52,7 +52,8 @@ public class XMLBasicSave {
 
 	public void savetoxml() {
 		  try {
-				File file = new File("/home/andreas/eclipse-workspace/play18xx/save.xml");
+				//File file = new File("/home/andreas/eclipse-workspace/play18xx/save.xml");
+			  	File file = new File("../save.xml");
 				JAXBContext jaxbContext = JAXBContext.newInstance(xml.XMLBasicSave.class);
 				Marshaller jaxbMarshaller = jaxbContext.createMarshaller();
 

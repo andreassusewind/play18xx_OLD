@@ -46,7 +46,8 @@ public class XMLBasicLoad {
 	
 	public static void loadfromxml(Basic basic) throws JAXBException, FileNotFoundException {
 		if (startmethods.Play1830.verbose) { System.out.println("XMLBasicLoad.loadfromxml"); }
-		File file = new File("/home/andreas/eclipse-workspace/play18xx/save.xml");
+		//File file = new File("/home/andreas/eclipse-workspace/play18xx/save.xml");
+		File file = new File("../save.xml");
 		JAXBContext jaxbContext = JAXBContext.newInstance(XMLBasicLoad.class);
 		Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 		XMLBasicLoad xmlbasic = (XMLBasicLoad) unmarshaller.unmarshal(file);
