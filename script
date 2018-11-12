@@ -1,0 +1,5 @@
+cd src/
+javac --add-modules java.se.ee startmethods/Play1830.java 
+cd ..
+cd bin/
+java --add-modules java.se.ee startmethods.Play1830
